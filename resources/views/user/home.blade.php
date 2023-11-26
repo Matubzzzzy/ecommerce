@@ -69,7 +69,7 @@ https://templatemo.com/tm-546-sixteen-clothing
 
               @if (Route::has('login'))
                     @auth
-                        <li><a class="nav-link" href="{{ url('/dashboard') }}" >Dashboard</a></li>
+                        <li><a class="nav-link" href="{{ url('/dashboard') }}" >Log Out</a></li>
                     @else
                         <li><a class="nav-link" href="{{ route('login') }}" >Log in</a></li>
 
@@ -114,7 +114,7 @@ https://templatemo.com/tm-546-sixteen-clothing
     </div>
     <!-- Banner Ends Here -->
 
-===========================================================  
+@include('user.product')  
 
     <div class="best-features">
       <div class="container">
