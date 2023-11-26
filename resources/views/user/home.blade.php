@@ -74,7 +74,7 @@ https://templatemo.com/tm-546-sixteen-clothing
                         <li><a class="nav-link" href="{{ route('login') }}" >Log in</a></li>
 
                         @if (Route::has('register'))
-                            <li><a  href="{{ route('register') }}" >Register</a></li>
+                            <li><a class="nav-link" href="{{ route('register') }}" >Register</a></li>
                         @endif
                     @endauth
             @endif
