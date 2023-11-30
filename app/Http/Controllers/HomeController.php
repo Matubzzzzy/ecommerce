@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\User;
+use App\Models\Product;
+
 
 class HomeController extends Controller
 {
@@ -16,18 +18,21 @@ class HomeController extends Controller
             return view('admin.home');
         }
         else {
-            return view('user.home');
+            $data = product::all();
+            return view('user.home', ['data' => $data]);
     }
 }
 
 public function index(){
 
     if(Auth::id()){
-        return redirect('redirect');
+        $data = product::all();
+        return view('user.home', ['data' => $data]);
     }else{
-        return view('user.home');
+        return redirect('redirect');
     }
     }
+
     
 
 
