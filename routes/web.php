@@ -37,3 +37,5 @@ Route::get('/', [HomeController::class, 'index']);
 Route::get('/product', [AdminController::class, 'product']);
 
 Route::post('/uploadproduct', [AdminController::class, 'uploadproduct']);
+
+Route::get('/showproduct', [AdminController::class, 'showproduct']);

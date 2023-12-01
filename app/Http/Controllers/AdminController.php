@@ -28,4 +28,11 @@ class AdminController extends Controller
         $data->save();
         return redirect()->back()->with('message', 'The product has been added successfully! (/◕ヮ◕)/');
     }
+
+
+
+    public function showproduct()
+    {
+        return view('admin.showproduct');
+    }
 }

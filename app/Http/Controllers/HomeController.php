@@ -11,17 +11,23 @@ use App\Models\Product;
 class HomeController extends Controller
 {
     public function redirect()
-    {
+{
+    if (Auth::check()) {
         $usertype = Auth::user()->usertype;
 
-        if($usertype==1){
+        if ($usertype == 1) {
             return view('admin.home');
-        }
-        else {
+        } else {
             $data = product::all();
             return view('user.home', ['data' => $data]);
+        }
+    } else {
+        // User is not authenticated
+        // You can redirect them to the login page or handle the situation accordingly
+        return redirect()->route('login');
     }
 }
+
 
 public function index(){
 
