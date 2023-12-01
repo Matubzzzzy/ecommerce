@@ -69,6 +69,10 @@ https://templatemo.com/tm-546-sixteen-clothing
 
               @if (Route::has('login'))
                     @auth
+                    <li class="nav-item">
+                      <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                    
                         <li><a class="nav-link" href="{{ url('/dashboard') }}" >Log Out</a></li>
                     @else
                         <li><a class="nav-link" href="{{ route('login') }}" >Log in</a></li>
@@ -86,6 +90,14 @@ https://templatemo.com/tm-546-sixteen-clothing
           </div>
         </div>
       </nav>
+
+      @if(session()->has('message'))
+            <div class="alert alert-success">
+                <button type="button" class="close" data-dismiss="alert">x</button>
+                {{session()->get('message')}}
+            </div>
+            @endif
+
     </header>
 
     <!-- Page Content -->

@@ -19,18 +19,43 @@
         <!-- partial -->
         <div class="container-fluid page-body-wrapper">
         <div class="container" align="center">
+
+        @if(session()->has('message'))
+            <div class="alert alert-success">
+                <button type="button" class="close" data-dismiss="alert">x</button>
+                {{session()->get('message')}}
+            </div>
+            @endif
+
+
             <table>
-                <tr>
-                    <td>Title</td>
-                    <td>Description</td>
-                    <td>Quantity</td>
-                    <td>Price</td>
-                    <td>Image</td>
+                <tr style="background-color: grey; align-items:center">
 
-
+                    <td style="padding:20px;">Title</td>
+                    <td style="padding:20px;">Description</td>
+                    <td style="padding:20px;">Quantity</td>
+                    <td style="padding:20px;">Price</td>
+                    <td style="padding:20px;">Image</td>
+                    <td style="padding:20px;">Delete</td>
 
                 </tr>
 
+                @foreach($data as $product)
+                <tr style="background-color: black; align-items:center">
+
+                    <td>{{$product->title}}</td>
+                    <td>{{$product->description}}</td>
+                    <td>{{$product->quantity}}</td>
+                    <td>{{$product->price}}</td>
+                    <td>
+                        <img height="200" width="200" src="/productimage/{{$product->image}}">
+                    </td>
+                    <td>
+                        <a class="btn btn-danger" href="{{url('deleteproduct', $product->id)}}">Delete</a>
+                    </td>
+
+                </tr>
+                @endforeach
 
             </table>
 

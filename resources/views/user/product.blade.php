@@ -1,3 +1,5 @@
+
+
 <div class="latest-products">
       <div class="container">
         <div class="row">
@@ -17,7 +19,12 @@
                 <a href="#"><h4>{{$product->title}}</h4></a>
                 <h6>Ksh.{{$product->price}}</h6>
                 <p>{{$product->description}}</p>
-                
+                <form action="{{url('addcart', $product->id)}}" method="POST">
+                  @csrf
+                  <input type="number" value="1" min="1" class="form-control" name="quantity" style="width:100px">
+                  <br>
+                  <input class="btn btn-primary" type="submit" value="Add To Cart">
+                </form>
               </div>
             </div>
           </div>

@@ -77,7 +77,7 @@
           </li>
 
           <li class="nav-item menu-items">
-            <a class="nav-link" href="{{url('product')}}">
+            <a class="nav-link" href="{{url('showproduct')}}">
               <span class="menu-icon">
                 <i class="mdi mdi-file-document-box"></i>
               </span>

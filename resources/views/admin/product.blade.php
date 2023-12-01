@@ -35,11 +35,12 @@
         <div class="container" align="center">
             <h1 class="title">Add Product</h1>
 
-            @if(seesion()->has('message'))
+            @if(session()->has('message'))
             <div class="alert alert-success">
                 <button type="button" class="close" data-dismiss="alert">x</button>
                 {{session()->get('message')}}
             </div>
+            @endif
 
             <form action="{{url('uploadproduct')}}" method="POST" enctype="multipart/form-data">
 
