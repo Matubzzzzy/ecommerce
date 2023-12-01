@@ -43,4 +43,12 @@ class AdminController extends Controller
         $data->delete();
         return redirect()->back()->with('message', 'The product has been deleted successfully! (ー_ー)!!');
     }
+
+//     public function showcart()
+// {
+//     $user=auth()->user();
+//         $count=cart::where('phone', $user->phone)->count();
+//             return view('user.showcart', compact('count'));
+// }
+
 }

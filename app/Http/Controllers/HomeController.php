@@ -20,7 +20,9 @@ class HomeController extends Controller
             return view('admin.home');
         } else {
             $data = product::all();
-            return view('user.home', ['data' => $data]);
+            $user=auth()->user();
+            $count=cart::where('phone', $user->phone)->count();
+            return view('user.home', compact('data', 'count'));
         }
     } else {
         // User is not authenticated
@@ -60,7 +62,12 @@ public function index(){
         }
         
         }
-    
+        public function showcart(){
+            $user=auth()->user();
+            $cart=cart::where('phone', $user->phone);
+            $count=cart::where('phone', $user->phone)->count();
+            return view('user.showcart', compact('count', 'cart'));
+        }    
 
 
 

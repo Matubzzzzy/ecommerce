@@ -43,3 +43,5 @@ Route::get('/showproduct', [AdminController::class, 'showproduct']);
 Route::get('/deleteproduct/{id}', [AdminController::class, 'deleteproduct']);
 
 Route::post('/addcart/{id}', [HomeController::class, 'addcart']);
+
+Route::get('/showcart', [HomeController::class, 'showcart']);
