@@ -110,6 +110,13 @@ https://templatemo.com/tm-546-sixteen-clothing
             <td style="padding:10px; font-size:20px;">Quantity</td>
             <td style="padding:10px; font-size:20px;">Price</td>
         </tr>
+        @foreach($cart as $carts)
+        <tr>
+            <td>{{$carts->product_title}}</td>
+            <td>{{$carts->quantity}}</td>
+            <td>{{$carts->price}}</td>
+        </tr>
+        @endforeach
     </table>
 </div>
 

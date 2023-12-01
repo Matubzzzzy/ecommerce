@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
 
 
-    <title>Sixteen Clothing HTML Template</title>
+    <title>Gorgeous Glasses</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -46,7 +46,7 @@ https://templatemo.com/tm-546-sixteen-clothing
     <header class="">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
-          <a class="navbar-brand" href="index.html"><h2>Sixteen <em>Clothing</em></h2></a>
+          <a class="navbar-brand" href="index.html"><h2>Gorgeous <em>Glasses</em></h2></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -137,13 +137,13 @@ https://templatemo.com/tm-546-sixteen-clothing
         <div class="row">
           <div class="col-md-12">
             <div class="section-heading">
-              <h2>About Sixteen Clothing</h2>
+              <h2>About Gorgeous Glasses</h2>
             </div>
           </div>
           <div class="col-md-6">
             <div class="left-content">
               <h4>Looking for the best products?</h4>
-              <p><a rel="nofollow" href="https://templatemo.com/tm-546-sixteen-clothing" target="_parent">This template</a> is free to use for your business websites. However, you have no permission to redistribute the downloadable ZIP file on any template collection website. <a rel="nofollow" href="https://templatemo.com/contact">Contact us</a> for more info.</p>
+              <p><a rel="nofollow" href="https://templatemo.com/tm-546-sixteen-clothing" target="_parent">This store</a> is your one stop shop for all the trending glasses and frames with high quality assuarance. <a rel="nofollow" href="https://templatemo.com/contact">Contact us</a> for more info.</p>
               <ul class="featured-list">
                 <li><a href="#">Lorem ipsum dolor sit amet</a></li>
                 <li><a href="#">Consectetur an adipisicing elit</a></li>
@@ -171,7 +171,7 @@ https://templatemo.com/tm-546-sixteen-clothing
             <div class="inner-content">
               <div class="row">
                 <div class="col-md-8">
-                  <h4>Creative &amp; Unique <em>Sixteen</em> Products</h4>
+                  <h4>Creative &amp; Unique <em>Gorgeous</em> Products</h4>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque corporis amet elite author nulla.</p>
                 </div>
                 <div class="col-md-4">
@@ -190,9 +190,9 @@ https://templatemo.com/tm-546-sixteen-clothing
         <div class="row">
           <div class="col-md-12">
             <div class="inner-content">
-              <p>Copyright &copy; 2020 Sixteen Clothing Co., Ltd.
+              <p>Copyright &copy; 2023 Gorgeous Glasses Co., Ltd.
             
-            - Design: <a rel="nofollow noopener" href="https://templatemo.com" target="_blank">TemplateMo</a></p>
+            </p>
             </div>
           </div>
         </div>

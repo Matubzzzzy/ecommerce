@@ -64,7 +64,7 @@ public function index(){
         }
         public function showcart(){
             $user=auth()->user();
-            $cart=cart::where('phone', $user->phone);
+            $cart=cart::where('phone', $user->phone)->get();
             $count=cart::where('phone', $user->phone)->count();
             return view('user.showcart', compact('count', 'cart'));
         }    
